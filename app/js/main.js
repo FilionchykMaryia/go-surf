@@ -103,8 +103,8 @@ $(function(){
     fade: true,
     prevArrow: '<img class="slider-arrows slider-arrows__left" src="../img/arrows-left.svg" alt="" srcset=""/>',
     nextArrow: '<img class="slider-arrows slider-arrows__right" src="../img/arrows-right.svg" alt="" srcset=""/>',
-  })
-  
+  });
+  new WOW().init();
 });
 $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/minus.svg" alt=""></div></div>').insertAfter('.quantity input');
 $('.quantity').each(function() {
@@ -153,4 +153,4 @@ $('.surfboard-box__circle').on('click', function(){
 
 $('.menu-btn').on('click', function(){
   $('.menu').toggleClass('active')
-})
+});

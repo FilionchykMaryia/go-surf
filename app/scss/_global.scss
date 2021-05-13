@@ -12,7 +12,9 @@ body{
   background-color: #171919;
   color: #fff;
   text-transform: uppercase;
- 
+  // чтобы не было нижнего скролла при анимации
+  min-width: 320px;
+  overflow-x: hidden;
 }
 a{
   display: inline-block;
@@ -69,12 +71,15 @@ display: inline-block;
 
 
 .title{
-  span{
+  div{
     font-weight: 800;
     font-size: 200px;
     color: rgba(#fff, .2);
     position: relative;
     transform: translateX(-50px);
+    display: inline-block;
+  }
+  span{
     display: inline-block;
   }
   h3{
